@@ -8,14 +8,14 @@
   // output data of each row
   ?>
 
-<table>
+<table border="1">
  <?php
     while($row = $result->fetch_assoc()) {
     // echo "id: " . $row["id"]. " -Zone: " . $row["zone"]. " -Board " . $row["board"]." -Tempolary".$row["temp"] ." - Humidity".$row["humi"]." ". $row["dmy"]. "<br>";
  ?>
     <tr>
-        <td> 1 </td>
-        <td> 2 </td>
+        <td> <?php echo $row["id"]; ?></td>
+        <td> <?php echo $row["zone"]; ?> </td>
         <td> 3 </td>
         <td> 4 </td>
         <td> 5 </td>
