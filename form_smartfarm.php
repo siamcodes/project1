@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container">
+        <h1> ฟอร์มกรอกข้อมูลสมาร์ทฟาร์ม </h1>
         <form action="insert_smartfarm.php" method="POST"  enctype="multipart/form-data">
             Zone : <input type="text" name="zone" class="form-control" /> 
             Board: <input type="text" name="board" class="form-control" /> 
