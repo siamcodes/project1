@@ -8,14 +8,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
 </head>
 <body>
-    <form action="insert_smartfarm.php" method="POST"  enctype="multipart/form-data">
-        Zone : <input type="text" name="zone" /> <br/>
-        Board: <input type="text" name="board" />  <br/>
-        อุณหภูมิ: <input type="text" name="temp" />  <br/>
-        ความชื้น: <input type="text" name="humi" />  <br/>
-        <input type="submit" value="บันทึก" />
-    </form>
-
+    <div class="container">
+        <form action="insert_smartfarm.php" method="POST"  enctype="multipart/form-data">
+            Zone : <input type="text" name="zone" class="form-control" /> 
+            Board: <input type="text" name="board" class="form-control" /> 
+            อุณหภูมิ: <input type="text" name="temp" class="form-control" />  
+            ความชื้น: <input type="text" name="humi" class="form-control" /> 
+            <input type="submit" value="บันทึก" class="btn btn-primary" />
+        </form>
+   </div>
     
 </body>
 </html>
