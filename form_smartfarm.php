@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="insert_smartfarm.php" method="post"  enctype="multipart/form-data">
+    <form action="insert_smartfarm.php" method="POST"  enctype="multipart/form-data">
         Zone : <input type="text" name="zone" /> <br/>
         Board: <input type="text" name="board" />  <br/>
         อุณหภูมิ: <input type="text" name="temp" />  <br/>
