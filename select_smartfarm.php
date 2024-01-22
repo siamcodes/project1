@@ -19,6 +19,8 @@
             <th> อุณหภูมิ </th>
             <th> ความชื้น </th>
             <th> วันที่-เวลา</th>
+            <th> แก้ไข </th>
+            <th> ลบ </th>
         </tr>
     <?php
         while($row = $result->fetch_assoc()) {
@@ -31,6 +33,8 @@
             <td> <?php echo $row["temp"]; ?> </td>
             <td> <?php echo $row["humi"]; ?> </td>
             <td> <?php echo $row["dmy"]; ?> </td>
+            <td> แก้ไข</td>
+            <td> <?php echo"<a href='delete_smartfarm.php?id=$row[id]'> ลบ </a>";  ?></td>
         </tr>
     <?php   
         }
