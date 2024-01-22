@@ -17,7 +17,8 @@
     <div class="container">
         <div class="col-8">
             <h1 class="text-center"> แก้ไขข้อมูลสมาร์ทฟาร์ม </h1>
-            <form action="update_smartfarm.php" method="POST"  enctype="multipart/form-data">
+            <form action="update_smartfarm.php" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="id" value="<?php echo $row[id]; ?>" /> 
                 Zone : <input type="text" name="zone" class="form-control" value="<?php echo $row[zone]; ?>" /> 
                 Board: <input type="text" name="board" class="form-control" value="<?php echo $row[board]; ?>" /> 
                 อุณหภูมิ: <input type="text" name="temp" class="form-control" value="<?php echo $row[temp]; ?>" />  
